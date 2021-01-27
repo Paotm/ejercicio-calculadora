@@ -1,0 +1,42 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background:  linear-gradient( to right, #B6A6DC , #A6D6DC );
+}
+
+.grilla{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grilla > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #e7caf3;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgb(238, 200, 255);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 2.8rem;
+
+}
+
+
+.grilla > button:hover {
+    background-color: rgb(223, 213, 224);
+}
